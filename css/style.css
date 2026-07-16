@@ -460,6 +460,7 @@ Version: 1.0
   }
 }
 
+
 body {
   background-color: #fff;
   font-family: "Poppins", sans-serif;
@@ -4580,6 +4581,13 @@ ol.list-num-count.list-outline-none > li:before {
   height: 0;
 }
 
+.nav-tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 767px) {
   .mt-tabs .nav-tabs > li {
     float: none;
@@ -4849,7 +4857,6 @@ ol.list-num-count.list-outline-none > li:before {
 }
 
 .mt-tabs {
-  max-width: 720px;
   width: 100%;
 }
 
@@ -5329,11 +5336,26 @@ ol.list-num-count.list-outline-none > li:before {
   background-color: #ffbc13;
 }
 
-.pricingtable-bx {
-  font-size: 70px;
-  font-family: Arial;
-  color: #666666;
-  color: #1a1a1a;
+.pricing-table-style-5 .pricingtable-bx {
+    font-size: 38px;
+    font-weight: 700;
+    color: #222;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+
+.pricing-table-style-5 .price-prefix {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.pricing-table-style-5 .price-suffix {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
 }
 
 .pricingtable-type {
@@ -5350,7 +5372,7 @@ ol.list-num-count.list-outline-none > li:before {
 
 .pricingtable-title {
   background-color: #1a1a1a;
-  padding: 20px;
+  padding: 0px;
   text-transform: uppercase;
 }
 
@@ -5359,15 +5381,53 @@ ol.list-num-count.list-outline-none > li:before {
   color: #fff;
 }
 
+.pricingtable-disabled{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.pricingtable-features .bi-check-circle-fill {
+    color: #22c55e; 
+    margin-right: 6px;
+}
+
+.pricingtable-features .bi-x-circle-fill {
+     color: #9ca3af;
+    margin-right: 6px;
+}
+
+.pricingtable-disabled{
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.pricing-table-style-5 .pricingtable-wrapper {
+    height: 100%;
+}
+
+.pricing-table-style-5 .pricingtable-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-table-style-5 .pricingtable-features {
+    flex: 1;
+}
+
+.pricing-table-style-5 .pricingtable-footer {
+    margin-top: auto;
+}
+
 .pricingtable-features {
   margin: 0;
-  padding: 0;
+  padding: 10px 0px;
   list-style: none;
   border: 1px solid #e9e9e9;
 }
 
 .pricingtable-features li {
-  padding: 12px;
+  padding: 8px;
   border-bottom: 1px solid #e9e9e9;
 }
 
@@ -5443,13 +5503,14 @@ ol.list-num-count.list-outline-none > li:before {
   text-transform: capitalize;
 }
 
+
 .pricing-table-style-5 .pricingtable-type::before {
   display: none;
 }
 
 .pricing-table-style-5 .pricingtable-title {
   background-color: inherit;
-  padding: 40px 20px 0px 20px;
+  padding: 30px 30px 0px 20px;
 }
 
 .pricing-table-style-5 .pricingtable-title * {

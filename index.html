@@ -45,6 +45,11 @@
     <link rel="stylesheet" type="text/css" href="css/loader.min.css" />
     <!-- FLATICON STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/flaticon.min.css" />
+    <!-- BOOTSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- MAIN STYLE SHEET -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
@@ -265,7 +270,7 @@
                 data-easein="default"
                 data-easeout="default"
                 data-masterspeed="default"
-                data-thumb="images/main-slider/slider1/slide1-thumb.jpg"
+                data-thumb="images/main-slider/slider1/slide1-thumb.webp"
                 data-rotate="0"
                 data-fstransition="fade"
                 data-fsmasterspeed="300"
@@ -286,9 +291,9 @@
               >
                 <!-- MAIN IMAGE -->
                 <img
-                  src="images/main-slider/slider1/slide1.jpg"
+                  src="images/main-slider/slider1/slide1-thumb.webp"
                   alt=""
-                  data-lazyload="images/main-slider/slider1/slide1.jpg"
+                  data-lazyload="images/main-slider/slider1/slide1-thumb.webp"
                   data-bgposition="center center"
                   data-bgfit="cover"
                   data-bgparallax="4"
@@ -468,7 +473,7 @@
                 data-easein="default"
                 data-easeout="default"
                 data-masterspeed="default"
-                data-thumb="images/main-slider/slider1/slide2-thumb.jpg"
+                data-thumb="images/main-slider/slider1/slide2-thumb.webp"
                 data-rotate="0"
                 data-fstransition="fade"
                 data-fsmasterspeed="300"
@@ -489,9 +494,9 @@
               >
                 <!-- MAIN IMAGE -->
                 <img
-                  src="images/main-slider/slider1/slide2.jpg"
+                  src="images/main-slider/slider1/slide2-thumb.webp"
                   alt=""
-                  data-lazyload="images/main-slider/slider1/slide2.jpg"
+                  data-lazyload="images/main-slider/slider1/slide2-thumb.webp"
                   data-bgposition="center center"
                   data-bgfit="cover"
                   data-bgparallax="4"
@@ -671,7 +676,7 @@
                 data-easein="default"
                 data-easeout="default"
                 data-masterspeed="default"
-                data-thumb="images/main-slider/slider1/slide3-thumb.jpg"
+                data-thumb="images/main-slider/slider1/slide3-thumb.webp"
                 data-rotate="0"
                 data-fstransition="fade"
                 data-fsmasterspeed="300"
@@ -692,9 +697,9 @@
               >
                 <!-- MAIN IMAGE -->
                 <img
-                  src="images/main-slider/slider1/slide3.jpg"
+                  src="images/main-slider/slider1/slide3-thumb.webp"
                   alt=""
-                  data-lazyload="images/main-slider/slider1/slide3.jpg"
+                  data-lazyload="images/main-slider/slider1/slide3-thumb.webp"
                   data-bgposition="center center"
                   data-bgfit="cover"
                   data-bgparallax="4"
@@ -1549,7 +1554,7 @@
         <!-- CALL US SECTION START -->
         <div
           class="section-full mobile-page-padding p-tb80 overlay-wraper bg-cover bg-center"
-          style="background-image: url(images/background/bg-1.jpg)"
+          style="background-image: url(images/background/slide1-thumb.jpg)"
         >
           <div class="overlay-main site-bg-primary opacity-07"></div>
           <div class="container">
@@ -1586,102 +1591,892 @@
                     <span class="font-weight-300 site-text-primary"
                       >Paket
                     </span>
-                    Layanan
+                    Harga
                   </h2>
                 </div>
               </div>
             </div>
             <!-- TITLE END -->
-
             <div class="section-content">
-              <div class="pricingtable-row">
-                <div class="row d-flex justify-content-center">
-                  <div class="col-lg-4 col-md-6 m-b30">
-                    <div
-                      class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+              <h4 class="text-black-50 text-uppercase mb-4">
+                Pilih Kategori Luas Bangunan Anda
+              </h4>
+              <div class="mt-tabs tabs-default">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <button
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#essential-plan"
+                      type="button"
                     >
-                      <div class="pricingtable-inner">
-                        <div class="pricingtable-title mb-5">
-                          <h4>Paket Desain</h4>
-                        </div>
-
-                        <ul class="list-simple text-black">
-                          <li>Konsultasi kebutuhan dan konsep desain</li>
-                          <li>Pembuatan denah dan layout ruang</li>
-                          <li>Desain 3D eksterior bangunan</li>
-                          <li>Gambar kerja dasar</li>
-                          <li>Revisi desain sesuai kebutuhan</li>
-                        </ul>
-
-                        <div class="pricingtable-footer">
-                          <a
-                            href="contact-1.html"
-                            class="site-button btn-effect"
-                            >Konsultasi Sekarang</a
+                      <span>< 100 m2</span>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#standar-plan"
+                      type="button"
+                    >
+                      <span>100 - 500 m2</span>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#premium-plan"
+                      type="button"
+                    >
+                      <span>500 - 1000 m2</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="essential-plan">
+                    <div class="pricingtable-row">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
                           >
-                        </div>
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Starter Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
 
-                        <div class="overlay-main bg-white opacity-07"></div>
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  20.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D Tanpa Render
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Visual Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  25.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Design Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  30.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Detail Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  50.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Complete Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  65.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 m-b30">
-                    <div
-                      class="pricingtable-wrapper pricing-table-style-5 overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
-                    >
-                      <div class="pricingtable-inner">
-                        <div class="pricingtable-title mb-5">
-                          <h4>Paket Konstruksi</h4>
-                        </div>
-
-                        <ul class="list-simple text-black">
-                          <li>Pembangunan dari tahap awal hingga selesai</li>
-                          <li>Pengawasan dan kontrol kualitas pekerjaan</li>
-                          <li>Penggunaan material sesuai standar</li>
-                          <li>Manajemen tenaga kerja profesional</li>
-                          <li>Pengerjaan sesuai jadwal yang disepakati</li>
-                        </ul>
-
-                        <div class="pricingtable-footer">
-                          <a
-                            href="contact-1.html"
-                            class="site-button btn-effect"
-                            >Konsultasi Sekarang</a
+                  <div class="tab-pane fade show" id="standar-plan">
+                    <div class="pricingtable-row">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
                           >
-                        </div>
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Starter Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
 
-                        <div class="overlay-main bg-white opacity-07"></div>
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  12.500
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D Tanpa Render
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Visual Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  17.500
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Design Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  22.500
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Detail Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  42.500
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Complete Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  50.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div class="col-lg-4 col-md-6 m-b30">
-                    <div
-                      class="pricingtable-wrapper pricing-table-style-5 overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary bg-gray"
-                    >
-                      <div class="pricingtable-inner">
-                        <div class="pricingtable-title mb-5">
-                          <h4>Paket Renovasi</h4>
-                        </div>
-
-                        <ul class="list-simple text-black">
-                          <li>Survey dan analisa kondisi bangunan</li>
-                          <li>Perencanaan konsep renovasi</li>
-                          <li>Pekerjaan pembongkaran dan perbaikan</li>
-                          <li>Penyesuaian desain sesuai kebutuhan</li>
-                          <li>Finishing rapi dan modern</li>
-                        </ul>
-
-                        <div class="pricingtable-footer">
-                          <a
-                            href="contact-1.html"
-                            class="site-button btn-effect"
-                            >Konsultasi Sekarang</a
+                  <div class="tab-pane fade show" id="premium-plan">
+                    <div class="pricingtable-row">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
                           >
-                        </div>
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Starter Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
 
-                        <div class="overlay-main bg-white opacity-07"></div>
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  10.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D Tanpa Render
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Visual Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  15.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Design Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  20.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Detail Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  40.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li class="pricingtable-disabled">
+                                  <i class="bi bi-x-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 m-b30">
+                          <div
+                            class="pricingtable-wrapper pricing-table-style-5 bg-white overflow-hide hover-shadow bdr-t-4 bdr-solid bdr-primary"
+                          >
+                            <div class="pricingtable-inner">
+                              <div class="pricingtable-title">
+                                <h4>Complete Plan</h4>
+                                <hr class="mt-3" />
+                              </div>
+
+                              <div class="pricingtable-price">
+                                <span class="pricingtable-bx">
+                                  <span class="price-prefix">Rp</span>
+                                  45.000
+                                  <span class="price-suffix">/m²</span>
+                                </span>
+                              </div>
+
+                              <ul class="pricingtable-features text-black">
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i
+                                  >Modeling 3D
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>3D
+                                  Rendering
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Utama
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Gambar
+                                  Kerja Detail
+                                </li>
+                                <li>
+                                  <i class="bi bi-check-circle-fill"></i>Rencana
+                                  Anggara Biaya
+                                </li>
+                              </ul>
+
+                              <div class="pricingtable-footer">
+                                <a
+                                  href="contact-1.html"
+                                  class="site-button btn-effect"
+                                  >Konsultasi</a
+                                >
+                              </div>
+
+                              <div
+                                class="overlay-main bg-white opacity-07"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
