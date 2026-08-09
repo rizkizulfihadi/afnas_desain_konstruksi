@@ -15498,3 +15498,28 @@ Image Effect Two
 .testimonial-pic.shadow {
   box-shadow: none !important;
 }
+
+
+.tp-bgimg.defaultimg{
+    position: relative !important;
+    overflow: hidden;
+}
+
+.tp-bgimg.defaultimg::before{
+    content: "";
+    position: absolute;
+    inset: -30px; /* diperbesar agar blur tidak terpotong */
+
+    background: linear-gradient(
+        90deg,
+        rgba(255,255,255,.90) 0%,
+        rgba(255,255,255,.70) 35%,
+        rgba(255,255,255,.25) 70%,
+        rgba(255,255,255,0) 100%
+    );
+
+    filter: blur(25px);
+    opacity: .95;
+    z-index: 1;
+    pointer-events: none;
+}
