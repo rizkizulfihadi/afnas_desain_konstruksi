@@ -7,31 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Harga berdasarkan kategori luas
   const prices = {
     small: {
-      "Starter Plan": 20000,
-      "Visual Plan": 25000,
-      "Design Plan": 30000,
-      "Detail Plan": 50000,
-      "Complete Plan": 65000,
-    },
-    medium: {
-      "Starter Plan": 12500,
-      "Visual Plan": 17500,
-      "Design Plan": 22500,
-      "Detail Plan": 42500,
-      "Complete Plan": 50000,
+      "Paket A Visual Plan": 25000,
+      "Paket B Detail Visual 3D": 50000,
+      "Paket C Detail Engineering Desain": 75000,
     },
     large: {
-      "Starter Plan": 10000,
-      "Visual Plan": 15000,
-      "Design Plan": 20000,
-      "Detail Plan": 40000,
-      "Complete Plan": 45000,
+      "Paket A Visual Plan": 20000,
+      "Paket B Detail Visual 3D": 45000,
+      "Paket C Detail Engineering Desain": 65000,
     },
   };
 
   function getCategory(area) {
-    if (area < 100) return "small";
-    if (area <= 500) return "medium";
+    if (area <= 100) return "small";
     return "large";
   }
 
@@ -55,8 +43,38 @@ document.addEventListener("DOMContentLoaded", () => {
     totalDisplay.textContent = formatRupiah(total);
   }
 
+  // Perubahan luas
   areaInput.addEventListener("input", calculate);
+
+  // Perubahan dropdown
   packageSelect.addEventListener("change", calculate);
 
+  // ==========================================
+  // Tombol "Pilih Paket"
+  // ==========================================
+
+  const packageButtons = document.querySelectorAll(".btn-select-package");
+
+  packageButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const selectedPackage = button.dataset.package;
+
+      // Pilih paket pada dropdown
+      packageSelect.value = selectedPackage;
+
+      // Hitung ulang harga
+      calculate();
+
+      // Scroll ke kalkulator
+      document.getElementById("calc-package").scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    });
+  });
+
+  // Hitung pertama kali
   calculate();
 });
