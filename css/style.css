@@ -15523,3 +15523,15 @@ Image Effect Two
     z-index: 1;
     pointer-events: none;
 }
+
+/* Tinggi navbar */
+.main-bar {
+  min-height: 80px;
+}
+
+/* Area logo */
+.logo-header {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
